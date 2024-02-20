@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap");
+body {
+  background-color: #d2d2d2;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+
+.menu {
+  max-width: calc(100vw - 20px);
+  min-width: 333px;
+  margin-bottom: 20px;
+  margin-top: 15px;
+  background-color: #fff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  -webkit-backdrop-filter: blur(30px);
+  backdrop-filter: blur(30px);
+  position: fixed;
+  z-index: 56;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  min-height: 73px;
+  border-radius: 10px;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.content-wrapper {
+  width: 1200px;
+  margin: 0 auto;
+  box-sizing: content-box;
+}
+
+.menu__inner {
+  height: 50px;
+  min-width: 250px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: space-between;
+  padding: 0 25px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+a {
+  color: #222222;
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-transition: all 0.2s cubic-bezier(0.5, 0, 0.5, 0.75);
+  -moz-transition: all 0.2s cubic-bezier(0.5, 0, 0.5, 0.75);
+  transition: all 0.2s cubic-bezier(0.5, 0, 0.5, 0.75);
+}
+
+a:hover {
+  color: #4096ff;
+}
+
+.yt {
+  margin-right: 2em;
+}
+
+.container {
+  margin-top: 120px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.item {
+  background-color: rgba(170, 170, 170, 0.709);
+  width: 250px;
+  height: 300px;
+  min-width: 250px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  border-width: 3px;
+  border-radius: 6px;
+  -webkit-box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
+}
+
+.jpeg {
+  width: 210px;
+  height: 150px;
+  border-width: 3px;
+  border-radius: 6px;
+}
+
+.jpeg {
+  -webkit-transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.jpeg:hover {
+  scale: 1.1;
+}
+
+.f-bo {
+  text-decoration: none;
+}
+
+.block-link {
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .item {
+    width: calc(50% - 20px);
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .item {
+    width: calc(33.33% - 20px);
+  }
+}
+@media screen and (max-width: 380px) {
+  .menu__inner {
+    flex-direction: column;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
